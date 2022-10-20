@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 
 export default function App() {
   const apiKey = process.env.REACT_APP_API_KEY;
+  console.log(apiKey);
   const [cities, setCities] = useState([
     {
       min: 32,
