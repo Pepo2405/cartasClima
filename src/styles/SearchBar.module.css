@@ -1,0 +1,50 @@
+.button {
+  font-size: 16px;
+  border-color: rgb(204, 204, 204);
+  border-style: solid;
+  padding: 8px;
+  border-width: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #423d42;
+  background: rgba( 85, 83, 83, 0.45 );
+backdrop-filter: blur( 12.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+}
+.input {
+  font-size: 16px;
+  border-color: rgb(204, 204, 204);
+  border-style: solid;
+  padding: 8px;
+  border-width: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #423d42;
+  color: white;
+  padding-left: 25px;
+  padding-right: 12px;
+  background: rgba( 85, 83, 83, 0.45 );
+backdrop-filter: blur( 12.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+}
+.input:focus,
+.button:focus {
+  outline: none;
+}
+.input::placeholder {
+  font-size: 16px;
+  color: #eaeaeac5;
+  padding-left: 10px;
+}
+
+.SearchBar {
+  transition: all 0.2s;
+  border-radius: 20px;
+  display: flex;
+
+}
+.SearchBar:active,
+.SearchBar:focus-within {
+  display: flex;
+  border: 1px solid #eaeaea;
+}
