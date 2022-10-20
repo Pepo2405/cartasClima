@@ -14,7 +14,7 @@ export default function App() {
       img: "03n",
       id: 2172797,
       wind: 3.6,
-      temp: 300.15,
+      temp: 30.15,
       name: "Cairns",
       weather: "Clouds",
       clouds: 40,

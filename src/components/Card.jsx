@@ -16,7 +16,7 @@ export default function Card({ id, max, min, name, img, onClose, temp }) {
             ✖
           </button>
         </div>
-        <h4>C° {(temp * 0.1).toFixed(2)}</h4>
+        <h4>C° {(temp).toFixed(2)}</h4>
 
         <div className={`${styles.columns}`}>
           <div className={styles.text}>
