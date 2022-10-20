@@ -5,7 +5,8 @@ import Nav from "./components/Nav";
 
 export default function App() {
   const apiKey = process.env.REACT_APP_API_KEY;
-  console.log(apiKey);
+  const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=sp`
+  console.log(apiUrl);
   const [cities, setCities] = useState([
     {
       min: 32,
@@ -27,7 +28,7 @@ export default function App() {
   }
   function onSearch(ciudad) {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=sp`
+      apiUrl
     )
       .then((r) => r.json())
       .then((recurso) => {
